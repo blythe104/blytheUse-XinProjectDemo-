@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/title_bar"/>
+
+    <com.xin.xinprojectsdemo.marqueen.MarqueenDemo
+        android:id="@+id/tv_marqueen"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:text="hello this is marqueen demo,hello world hllledfdf owkdfdf"/>
+
+    <com.xin.xinprojectsdemo.marqueen.ScrollTextView
+        android:id="@+id/scrollview"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        >
+    </com.xin.xinprojectsdemo.marqueen.ScrollTextView>
+
+    <com.xin.xinprojectsdemo.marqueen.ScrollTextView
+        android:id="@+id/switcher2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="62dp"
+        android:background="#679077"
+        android:orientation="horizontal">
+    </com.xin.xinprojectsdemo.marqueen.ScrollTextView>
+
+    <Button
+        android:id="@+id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#888888"
+        android:text="测试色值"
+        />
+
+</LinearLayout>

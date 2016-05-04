@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.xin.xinprojectsdemo"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".marqueen.MarQueenActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".androidh5.HtmlActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".fontchange.ViewPagerUseActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".customattr.TypeDemo">
+        </activity>
+        <activity android:name=".transtoolbar.BaseTranActivity">
+        </activity>
+        <activity android:name=".transtoolbar.DemoActivity"/>
+        <activity android:name=".chagebgcolor.ChangeBgColor">
+        </activity>
+        <activity android:name=".dslc.MineActivity">
+        </activity>
+    </application>
+
+</manifest>

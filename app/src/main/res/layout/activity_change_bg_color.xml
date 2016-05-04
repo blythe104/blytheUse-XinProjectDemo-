@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar"/>
+
+    <Button
+        android:id="@+id/btn_red"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="红色"/>
+
+    <Button
+        android:id="@+id/btn_green"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="绿色"/>
+
+    <Button
+        android:id="@+id/btn_gold"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="灰色"/>
+
+</LinearLayout>

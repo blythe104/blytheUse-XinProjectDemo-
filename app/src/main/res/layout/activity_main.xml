@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/title_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/customa"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="自定义属性"/>
+
+            <Button
+                android:id="@+id/fontchange"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="4dp"
+                android:text="字体改变效果"/>
+
+            <Button
+                android:id="@+id/marqueen"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="4dp"
+                android:text="跑马灯效果"/>
+
+            <Button
+                android:id="@+id/androidh5"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="4dp"
+                android:text="安卓返回H5上一页"/>
+
+            <Button
+                android:id="@+id/transtoolbar"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="4dp"
+                android:text="透明标题栏"/>
+
+            <Button
+                android:id="@+id/chageColor"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="4dp"
+                android:text="改变色值"/>
+            <Button
+                android:id="@+id/dslcwd"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="4dp"
+                android:text="大圣理财我的"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
