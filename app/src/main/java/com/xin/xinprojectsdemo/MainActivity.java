@@ -12,6 +12,7 @@ import com.xin.xinprojectsdemo.androidh5.HtmlActivity;
 import com.xin.xinprojectsdemo.base.BaseActivity;
 import com.xin.xinprojectsdemo.chagebgcolor.ChangeBgColor;
 import com.xin.xinprojectsdemo.customattr.TypeDemo;
+import com.xin.xinprojectsdemo.dslc.FXActivity;
 import com.xin.xinprojectsdemo.dslc.MineActivity;
 import com.xin.xinprojectsdemo.fontchange.ViewPagerUseActivity;
 import com.xin.xinprojectsdemo.marqueen.MarQueenActivity;
@@ -28,6 +29,7 @@ public class MainActivity extends BaseActivity {
     private Button mChangeColor;
     private RelativeLayout relativeLayout;
     private Button mDslcWd;
+    private Button mDslcFx;
 
 
     @Override
@@ -50,6 +52,7 @@ public class MainActivity extends BaseActivity {
             relativeLayout.setBackgroundColor(Color.GRAY);
         }
         mDslcWd = (Button) findViewById(R.id.dslcwd);
+        mDslcFx = (Button) findViewById(R.id.dslcfx);
 
 
     }
@@ -74,6 +77,7 @@ public class MainActivity extends BaseActivity {
         mTransToolbar.setOnClickListener(this);
         mChangeColor.setOnClickListener(this);
         mDslcWd.setOnClickListener(this);
+        mDslcFx.setOnClickListener(this);
 
     }
 
@@ -105,6 +109,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.dslcwd:
                 startActivity(new Intent(this, MineActivity.class));
+                break;
+            case R.id.dslcfx:
+                startActivity(new Intent(this, FXActivity.class));
                 break;
         }
 

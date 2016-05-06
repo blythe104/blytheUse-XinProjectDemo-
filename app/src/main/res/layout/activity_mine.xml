@@ -31,7 +31,7 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="21dp"
                     android:background="@mipmap/wd_email"/>
 
                 <ImageView
@@ -40,7 +40,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_alignParentTop="true"
                     android:layout_marginRight="20dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="21dp"
                     android:background="@mipmap/wd_shezhi"/>
 
                 <com.xin.xinprojectsdemo.view.CircleImageView
@@ -49,7 +49,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="50dp"
+                    android:layout_marginTop="32dp"
                     android:background="@mipmap/wd_photo"/>
 
                 <LinearLayout
@@ -81,7 +81,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/circleImageView"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="24dp"
                     android:gravity="center_horizontal"
                     android:orientation="horizontal">
 
@@ -90,14 +90,14 @@
                         android:layout_height="wrap_content"
                         android:text="2,787,454.00"
                         android:textColor="#ffffff"
-                        android:textSize="22sp"/>
+                        android:textSize="25sp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="元"
                         android:textColor="#ffffff"
-                        android:textSize="16sp"/>
+                        android:textSize="13sp"/>
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -113,6 +113,7 @@
                     android:layout_height="40dp"
                     android:layout_below="@id/ll_zzc"
                     android:gravity="center"
+                    android:layout_marginTop="8dp"
                     android:orientation="horizontal">
 
                     <TextView
@@ -122,7 +123,7 @@
                         android:gravity="center"
                         android:text="总资产"
                         android:textColor="#ffffff"
-                        android:textSize="18sp"
+                        android:textSize="13sp"
                         />
 
                     <ImageView
@@ -145,15 +146,11 @@
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1.2"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
                         >
 
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="0.8"
-                            android:gravity="center"
-                            android:orientation="vertical">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -170,14 +167,14 @@
                                     android:gravity="bottom|center_horizontal"
                                     android:text="230,373.41"
                                     android:textColor="#ffffff"
-                                    android:textSize="18sp"/>
+                                    android:textSize="15sp"/>
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="元"
                                     android:textColor="#ffffff"
-                                    android:textSize="14sp"/>
+                                    android:textSize="11sp"/>
 
                             </LinearLayout>
 
@@ -186,6 +183,7 @@
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:gravity="center"
+                                android:layout_marginTop="7dp"
                                 android:orientation="horizontal">
 
                                 <TextView
@@ -205,20 +203,16 @@
                                     android:layout_marginTop="3dp"
                                     android:src="@mipmap/wd_zongzichan"/>
                             </LinearLayout>
-                        </LinearLayout>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1.2">
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
 
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1.2"
-                            android:gravity="center"
-                            android:orientation="vertical">
+
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -235,7 +229,7 @@
                                     android:gravity="bottom|center_horizontal"
                                     android:text="119,324.56"
                                     android:textColor="#ffffff"
-                                    android:textSize="18sp"
+                                    android:textSize="15sp"
                                     />
 
                                 <TextView
@@ -243,7 +237,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="元"
                                     android:textColor="#ffffff"
-                                    android:textSize="14sp"/>
+                                    android:textSize="11sp"/>
 
                             </LinearLayout>
 
@@ -251,6 +245,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
+                                android:layout_marginTop="7dp"
                                 android:gravity="center"
                                 android:orientation="horizontal">
 
@@ -271,7 +266,6 @@
                                     android:layout_marginTop="3dp"
                                     android:src="@mipmap/wd_zongzichan"/>
                             </LinearLayout>
-                        </LinearLayout>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -295,28 +289,17 @@
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal"
                         android:layout_weight="1">
 
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="0.8"
-                            android:gravity="center"
-                            android:orientation="vertical">
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="0dp"
-                                android:layout_weight="1"
-                                android:gravity="center"
-                                android:orientation="horizontal">
 
                                 <ImageView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:background="@mipmap/wd_chongzhi"
                                     android:gravity="center_horizontal"/>
-
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -324,11 +307,8 @@
                                     android:gravity="center_horizontal"
                                     android:text="充值"
                                     android:textColor="#ffffff"
-                                    android:textSize="20sp"/>
+                                    android:textSize="15sp"/>
 
-                            </LinearLayout>
-
-                        </LinearLayout>
                     </LinearLayout>
 
                     <View
@@ -341,21 +321,10 @@
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal"
                         android:layout_weight="1">
 
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1.2"
-                            android:gravity="center"
-                            android:orientation="vertical">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="0dp"
-                                android:layout_weight="1"
-                                android:gravity="center"
-                                android:orientation="horizontal">
 
                                 <ImageView
                                     android:layout_width="wrap_content"
@@ -370,13 +339,9 @@
                                     android:gravity="bottom|center_horizontal"
                                     android:text="提现"
                                     android:textColor="#ffffff"
-                                    android:textSize="20sp"/>
+                                    android:textSize="15sp"/>
 
                             </LinearLayout>
-
-                        </LinearLayout>
-                    </LinearLayout>
-
 
                 </LinearLayout>
 
@@ -385,7 +350,7 @@
             <LinearLayout
                 android:id="@+id/ll_caidan"
                 android:layout_width="match_parent"
-                android:layout_height="240dp"
+                android:layout_height="275dp"
                 android:layout_below="@id/rela_top"
                 android:background="#eff1f3"
                 android:orientation="vertical">
@@ -418,7 +383,7 @@
                             android:layout_marginLeft="10dp"
                             android:text="我的理财"
                             android:textColor="#626571"
-                            android:textSize="16sp"/>
+                            android:textSize="14sp"/>
                     </LinearLayout>
 
                     <LinearLayout
@@ -435,7 +400,7 @@
                             android:layout_marginRight="2dp"
                             android:text="12,600元在投"
                             android:textColor="#8c909d"
-                            android:textSize="14sp"/>
+                            android:textSize="13sp"/>
 
                         <ImageView
                             android:layout_width="20dp"
@@ -480,7 +445,12 @@
                             android:layout_marginLeft="10dp"
                             android:text="我的特权本金"
                             android:textColor="#626571"
-                            android:textSize="16sp"/>
+                            android:textSize="14sp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:background="@mipmap/note"/>
                     </LinearLayout>
 
                     <LinearLayout
@@ -497,7 +467,7 @@
                             android:layout_marginRight="2dp"
                             android:text="4,0000元"
                             android:textColor="#8c909d"
-                            android:textSize="14sp"/>
+                            android:textSize="13sp"/>
 
                         <ImageView
                             android:layout_width="20dp"
@@ -518,7 +488,7 @@
                     android:id="@+id/ll_wdhb"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_marginTop="13dp"
+                    android:layout_marginTop="9dp"
                     android:layout_weight="1"
                     android:background="#ffffff"
                     android:orientation="horizontal">
@@ -543,7 +513,7 @@
                             android:layout_marginLeft="10dp"
                             android:text="红包卡券"
                             android:textColor="#626571"
-                            android:textSize="16sp"/>
+                            android:textSize="14sp"/>
                     </LinearLayout>
 
                     <LinearLayout
@@ -560,7 +530,7 @@
                             android:layout_marginRight="2dp"
                             android:text="2张"
                             android:textColor="#8c909d"
-                            android:textSize="14sp"/>
+                            android:textSize="13sp"/>
 
                         <ImageView
                             android:layout_width="20dp"
@@ -605,7 +575,12 @@
                             android:layout_marginLeft="10dp"
                             android:text="我的猴币"
                             android:textColor="#626571"
-                            android:textSize="16sp"/>
+                            android:textSize="14sp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:background="@mipmap/note"/>
                     </LinearLayout>
 
                     <LinearLayout
@@ -622,7 +597,7 @@
                             android:layout_marginRight="2dp"
                             android:text="4,000.00猴币"
                             android:textColor="#8c909d"
-                            android:textSize="14sp"/>
+                            android:textSize="13sp"/>
 
                         <ImageView
                             android:layout_width="20dp"
@@ -666,7 +641,7 @@
                             android:layout_marginLeft="10dp"
                             android:text="我的邀请"
                             android:textColor="#626571"
-                            android:textSize="16sp"/>
+                            android:textSize="14sp"/>
                     </LinearLayout>
 
                     <LinearLayout
@@ -683,7 +658,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginRight="2dp"
                             android:text="邀请好友星巴克券"
-                            android:textSize="14sp"/>
+                            android:textSize="13sp"/>
 
                         <ImageView
                             android:layout_width="20dp"
