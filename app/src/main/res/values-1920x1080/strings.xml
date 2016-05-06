@@ -1,0 +1,122 @@
+<resources>
+    <string name="app_name">大圣理财</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_test">TestActivity</string>
+
+
+    <!--确认弹窗页面-->
+    <string name="dialog_user_name">尊敬的大白</string>
+    <string name="dialog_buy_sure">在购买《新手专享》前请您确认：</string>
+    <string name="dialog_buy_content1">本人已清楚知悉该收益权产品的基础信息，并充分了解其产品特性。</string>
+    <string name="dialog_buy_content2">本人已仔细阅读/理解该收收益权产品</string>
+    <string name="dialog_buy_book_name">《风险提示书》</string>
+    <string name="dialog_buy_content3">全文，并愿意自行承担投资</string>
+    <string name="dialog_buy_content4">风险。</string>
+    <string name="dialog_buy_choice">确认</string>
+
+    <!--计算收益页面-->
+    <string name="calc_title">计算收益</string>
+    <string name="calc_money_dw">元</string>
+    <string name="calc_money_hint">请输入理财金额</string>
+    <string name="income_lv">9.0%</string>
+    <string name="income_day">7天</string>
+    <string name="exp_income">产品预期收益（元）</string>
+    <string name="exp_income_money">0.00</string>
+    <string name="exp_calc">计算</string>
+
+    <!--选择支付页面-->
+    <string name="choice_pay_title">选择支付方式</string>
+    <string name="choice_pay_content">3个月固定投资</string>
+    <string name="choice_pay_money">2,000</string>
+    <string name="choice_pay_unit">元</string>
+    <string name="choice_pay_mode">支付方式</string>
+    <string name="choice_pay_cz">充值</string>
+    <string name="choice_mode_ye">余额支付</string>
+    <string name="choice_mode_kj">快捷支付</string>
+    <string name="choice_mode_wy">网银支付</string>
+    <string name="choice_ye_money">56.00</string>
+    <string name="choice_ye_unit">元</string>
+    <string name="choice_kj_card">尾号4988</string>
+    <string name="choice_wy_card">尾号2384</string>
+    <string name="choice_next">下一步</string>
+
+    <!--余额支付页面-->
+    <string name="balance_title">余额支付</string>
+    <string name="pay_pwd">支付密码</string>
+    <string name="pay_pwd_hint">请输入交易密码</string>
+    <string name="pay_pwd_forget">忘记密码？</string>
+    <string name="banlance_pay">支付</string>
+
+    <!--支付完成页面-->
+    <string name="pay_success_title">支付完成</string>
+    <string name="pay_success">恭喜你投资成功！</string>
+    <string name="pay_success_content">3个月固定投资</string>
+    <string name="pay_success_inve">投资金额:</string>
+    <string name="pay_success_inve_money">10,000</string>
+    <string name="pay_success_inve_unit">元</string>
+    <string name="pay_success_incom">预期到期收益:</string>
+    <string name="pay_success_incom_money">200</string>
+    <string name="pay_success_incom_unit">元</string>
+    <string name="pay_success_date">兑付日期:</string>
+    <string name="pay_success_date_content">2015-2-3</string>
+    <string name="pay_success_btn_commit">继续投资</string>
+
+    <!--支付失败页面-->
+    <string name="pay_failure_title">支付失败</string>
+    <string name="pay_failure">支付失败，余额不足！</string>
+    <string name="pay_failure_button">立即充值</string>
+
+    <!--添加银行卡页面-->
+    <string name="add_bank_title">添加银行卡</string>
+    <string name="add_bank_owner">持卡人</string>
+    <string name="add_bank_owner_name">吴磊</string>
+    <string name="add_bank">银行</string>
+    <string name="add_bank_hint">选择发卡银行</string>
+    <string name="add_bank_numb">卡号</string>
+    <string name="add_banknum">银行卡号</string>
+    <string name="add_bank_city">开户省市</string>
+    <string name="add_bank_city_choice">选择省市</string>
+    <string name="add_id_card">身份证号码</string>
+    <string name="add_id_card_num">身份证号</string>
+    <string name="add_bank_phone">预留手机号</string>
+    <string name="add_bank_phone_num">预留银行开户手机号</string>
+
+    <!--快捷支付页面-->
+    <string name="fast_pay_title">快捷支付</string>
+    <string name="fast_bind_content">我们向您绑定的手机号</string>
+    <string name="fast_bind_phone">15908987482</string>
+    <string name="fast_bind_contentl">发送了验证码</string>
+    <string name="fast_bind_chknum">验证码</string>
+    <string name="fast_num_hint">请输入验证码</string>
+    <string name="fast_num_again_send">重新发送</string>
+    <string name="fast_num_again_l">(</string>
+    <string name="fast_num_again_time">20</string>
+    <string name="fast_num_again_r">s)</string>
+    <string name="fast_num_pays_title">支付密码</string>
+    <string name="fast_num_pays_pwd">请输入交易密码</string>
+
+    <!--红包活动页面-->
+    <string name="red_event_title">国庆现金大礼包</string>
+    <string name="cash_dy">现金抵押</string>
+    <string name="cash_dy_num">10,000</string>
+    <string name="cash_dy_num_unit">元</string>
+    <string name="red_event_period">有效期:</string>
+    <string name="period">2015,09,09-2015,12,31</string>
+    <string name="award_title">春节全民大派送</string>
+    <string name="award_title_date">2015-09-09 09:11</string>
+    <string name="award_detail">Mac book air一台</string>
+
+    <string name="can_use">可使用</string>
+    <string name="invest_cash">最低可投资金额：2000</string>
+    <string name="invest_begin">起投期限:</string>
+    <string name="invest_date">3</string>
+    <string name="invest_date_unit">个月</string>
+    <string name="invest_content">3个月及以上标的，出借≥1,000元</string>
+
+
+</resources>

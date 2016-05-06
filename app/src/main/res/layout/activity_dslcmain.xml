@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.xin.xinprojectsdemo.view.NoScrollViewPager
+        android:id="@+id/vp_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cfcfcf"/>
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_jx"
+            style="@style/BottomTabStyle"
+            android:layout_gravity="center"
+            android:checked="true"
+            android:drawableTop="@drawable/jx_btn"
+            android:text="精选"/>
+
+        <RadioButton
+            android:id="@+id/rb_lc"
+            style="@style/BottomTabStyle"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/cp_btn"
+            android:text="理财"/>
+
+        <RadioButton
+            android:id="@+id/rb_faxian"
+            style="@style/BottomTabStyle"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/fx_btn"
+            android:text="发现"/>
+
+        <RadioButton
+            android:id="@+id/rb_mine"
+            style="@style/BottomTabStyle"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/wd_btn"
+            android:text="我的"/>
+
+
+    </RadioGroup>
+
+
+</LinearLayout>

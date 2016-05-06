@@ -1,0 +1,88 @@
+<resources>
+    <!-- 底部菜单栏高度 -->
+    <dimen name="bottom_height">66dp</dimen>
+    <dimen name="titlebar_height">50dp</dimen>
+    <dimen name="jx_lunbo_height">150dp</dimen>
+    <dimen name="jx_guild_height">140dp</dimen>
+    <dimen name="jx_guild_size">60dp</dimen>
+
+    <!--精选字体大小设置-->
+    <dimen name="jx_aqbz_fontsize">16sp</dimen>
+    <dimen name="jx_yqnhsyl_textsise">18sp</dimen>
+    <dimen name="jx_guild_textsize">18sp</dimen>
+    <dimen name="jx_yqnhsylcontent_textsize">42sp</dimen>
+    <dimen name="jx_yqnhsyl_zhuanxiang_bottom">16sp</dimen>
+    <dimen name="jx_yqnhsyl_zx_bottom">14sp</dimen>
+    <dimen name="jx_yqnhsyl_zx_sz">20sp</dimen>
+    <dimen name="jx_yqnhsyl_ts">14dp</dimen>
+
+    <!--登录页面适配-->
+    <dimen name="login_photo">18dp</dimen>
+    <dimen name="login_textsize">15sp</dimen>
+    <dimen name="login_forget_pwd">14sp</dimen>
+    <dimen name="login_textsize_hint">13sp</dimen>
+    <dimen name="login_button_textsize">14sp</dimen>
+    <dimen name="login_find_pwd">110dp</dimen>
+
+    <!--注册页面数适配-->
+    <dimen name="regesiter_textsize">15sp</dimen>
+    <dimen name="regesiter_ts_textsize">14sp</dimen>
+    <dimen name="regesiter_textsize_hint">13sp</dimen>
+    <dimen name="regesiter_photo">16dp</dimen>
+    <dimen name="get_yzm_textsize">13dp</dimen>
+
+    <!--更多页面适配-->
+    <dimen name="more_photo">18dp</dimen>
+    <dimen name="more_textsize">14sp</dimen>
+    <dimen name="more_dslc_photo_width">90dp</dimen>
+    <dimen name="more_dslc_photo_height">30dp</dimen>
+    <dimen name="more_dslc_desc">13sp</dimen>
+    <dimen name="more_feedback_button">14sp</dimen>
+    <dimen name="more_kf_photo">16dp</dimen>
+    <dimen name="more_kf_phone">16dp</dimen>
+
+    <!--我的页面适配-->
+    <dimen name="iv_header">42dp</dimen>
+    <dimen name="yeMoney_textsize">32sp</dimen>
+    <dimen name="yeMoney_dw_textsize">16sp</dimen>
+    <dimen name="zrsy_textsize">18sp</dimen>
+    <dimen name="wd_textsize">12sp</dimen>
+    <dimen name="wd_ztje_textsize">20sp</dimen>
+    <dimen name="wd_photo_size">22dp</dimen>
+    <dimen name="wd_lbphoto_size">18dp</dimen>
+    <dimen name="wd_nextphoto_size">14dp</dimen>
+    <dimen name="wd_zt_textsize">14sp</dimen>
+    <dimen name="wd_zhphoto_size">14dp</dimen>
+    <dimen name="wd_title_height">150dp</dimen>
+    <dimen name="wd_bottom_photo_top">10dp</dimen>
+
+    <!--我的资料适配-->
+    <dimen name="wd_zl_textsize">16sp</dimen>
+    <dimen name="wd_zl_later">14sp</dimen>
+    <dimen name="wd_pwd_textsize">14sp</dimen>
+    <dimen name="wd_pwd_textsize_hint">13sp</dimen>
+    <dimen name="wd_button_textsize">14sp</dimen>
+    <dimen name="wd_phone_textsize">15sp</dimen>
+    <dimen name="wd_phone_hint">13sp</dimen>
+    <dimen name="wd_getyzm">14sp</dimen>
+    <dimen name="wd_bind_email">14sp</dimen>
+    <dimen name="wd_email_hint">13sp</dimen>
+    <dimen name="wd_email_content">12sp</dimen>
+    <dimen name="wd_email_success">13sp</dimen>
+    <dimen name="wd_photo">14dp</dimen>
+
+    <!--我的红包-->
+    <dimen name="wd_hbTitle_textsize">14sp</dimen>
+
+    <!--消息中心-->
+    <dimen name="xxzx_photo">30dp</dimen>
+    <dimen name="xxzx_title">16sp</dimen>
+    <dimen name="xxzx_date">12sp</dimen>
+    <dimen name="xxzx_content">13sp</dimen>
+
+    <dimen name="pop_bottom">60dp</dimen>
+
+
+
+
+</resources>
