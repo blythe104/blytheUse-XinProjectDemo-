@@ -47,6 +47,14 @@
         </activity>
         <activity android:name=".dslc.JXAtivity">
         </activity>
+        <activity android:name=".dslc.RadioButtonMoreStyle">
+        </activity>
+        <activity android:name=".dslc.ProgressBarActivity">
+        </activity>
+        <activity android:name=".dslc.RecyclerViewActivity">
+        </activity>
+        <activity android:name=".dslc.ZytActivity">
+        </activity>
     </application>
 
 </manifest>

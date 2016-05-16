@@ -13,7 +13,12 @@ import com.xin.xinprojectsdemo.base.BaseActivity;
 import com.xin.xinprojectsdemo.chagebgcolor.ChangeBgColor;
 import com.xin.xinprojectsdemo.customattr.TypeDemo;
 import com.xin.xinprojectsdemo.dslc.FXActivity;
+import com.xin.xinprojectsdemo.dslc.JXAtivity;
 import com.xin.xinprojectsdemo.dslc.MineActivity;
+import com.xin.xinprojectsdemo.dslc.ProgressBarActivity;
+import com.xin.xinprojectsdemo.dslc.RadioButtonMoreStyle;
+import com.xin.xinprojectsdemo.dslc.RecyclerViewActivity;
+import com.xin.xinprojectsdemo.dslc.ZytActivity;
 import com.xin.xinprojectsdemo.fontchange.ViewPagerUseActivity;
 import com.xin.xinprojectsdemo.marqueen.MarQueenActivity;
 import com.xin.xinprojectsdemo.transtoolbar.DemoActivity;
@@ -30,6 +35,11 @@ public class MainActivity extends BaseActivity {
     private RelativeLayout relativeLayout;
     private Button mDslcWd;
     private Button mDslcFx;
+    private Button mDslcJx;
+    private Button mRadioChange;
+    private Button mProgressbar;
+    private Button mRecyclerView;
+    private Button mZyt;
 
 
     @Override
@@ -52,7 +62,12 @@ public class MainActivity extends BaseActivity {
             relativeLayout.setBackgroundColor(Color.GRAY);
         }
         mDslcWd = (Button) findViewById(R.id.dslcwd);
+        mDslcJx = (Button) findViewById(R.id.dslcjx);
         mDslcFx = (Button) findViewById(R.id.dslcfx);
+        mRadioChange = (Button) findViewById(R.id.radiochange);
+        mProgressbar = (Button) findViewById(R.id.mprogressbar);
+        mRecyclerView = (Button) findViewById(R.id.mrecyclerView);
+        mZyt = (Button) findViewById(R.id.mzyt);
 
 
     }
@@ -78,6 +93,11 @@ public class MainActivity extends BaseActivity {
         mChangeColor.setOnClickListener(this);
         mDslcWd.setOnClickListener(this);
         mDslcFx.setOnClickListener(this);
+        mDslcJx.setOnClickListener(this);
+        mRadioChange.setOnClickListener(this);
+        mProgressbar.setOnClickListener(this);
+        mRecyclerView.setOnClickListener(this);
+        mZyt.setOnClickListener(this);
 
     }
 
@@ -112,6 +132,21 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.dslcfx:
                 startActivity(new Intent(this, FXActivity.class));
+                break;
+            case R.id.dslcjx:
+                startActivity(new Intent(this, JXAtivity.class));
+                break;
+            case R.id.radiochange:
+                startActivity(new Intent(this, RadioButtonMoreStyle.class));
+                break;
+            case R.id.mprogressbar:
+                startActivity(new Intent(this, ProgressBarActivity.class));
+                break;
+            case R.id.mrecyclerView:
+                startActivity(new Intent(this, RecyclerViewActivity.class));
+                break;
+            case R.id.mzyt:
+                startActivity(new Intent(this, ZytActivity.class));
                 break;
         }
 

@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <RadioGroup
+        android:id="@+id/orderBy1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <RadioButton
+            android:id="@+id/orderBy1.1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="名称" />
+        <RadioButton
+            android:id="@+id/orderBy1.2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日期" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test"></RadioButton>
+    </RadioGroup>
+    <RadioGroup
+        android:id="@+id/orderBy2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <RadioButton
+            android:id="@+id/orderBy2.1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="类型"
+            android:checked="false"/>
+        <RadioButton
+            android:id="@+id/orderBy2.2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="大小" />
+    </RadioGroup>
+    <RadioGroup
+        android:id="@+id/orderBy3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <RadioButton
+            android:id="@+id/orderBy3.3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="系统默认" />
+    </RadioGroup>
+</LinearLayout>
