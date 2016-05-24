@@ -8,6 +8,7 @@ import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.xin.xinprojectsdemo.activity.PineViewActivity;
 import com.xin.xinprojectsdemo.androidh5.HtmlActivity;
 import com.xin.xinprojectsdemo.base.BaseActivity;
 import com.xin.xinprojectsdemo.chagebgcolor.ChangeBgColor;
@@ -18,6 +19,7 @@ import com.xin.xinprojectsdemo.dslc.MineActivity;
 import com.xin.xinprojectsdemo.dslc.ProgressBarActivity;
 import com.xin.xinprojectsdemo.dslc.RadioButtonMoreStyle;
 import com.xin.xinprojectsdemo.dslc.RecyclerViewActivity;
+import com.xin.xinprojectsdemo.dslc.YaoYiYaoActivity;
 import com.xin.xinprojectsdemo.dslc.ZytActivity;
 import com.xin.xinprojectsdemo.fontchange.ViewPagerUseActivity;
 import com.xin.xinprojectsdemo.marqueen.MarQueenActivity;
@@ -40,6 +42,8 @@ public class MainActivity extends BaseActivity {
     private Button mProgressbar;
     private Button mRecyclerView;
     private Button mZyt;
+    private Button mYaoYiYao;
+    private Button mPinePic;
 
 
     @Override
@@ -52,6 +56,7 @@ public class MainActivity extends BaseActivity {
         mAndroidH5 = (Button) findViewById(R.id.androidh5);
         mTransToolbar = (Button) findViewById(R.id.transtoolbar);
         mChangeColor = (Button) findViewById(R.id.chageColor);
+        mPinePic = (Button) findViewById(R.id.pinepic);
         int color = SharedPreferencesUtils.getInt(getApplicationContext(), "color", 0);
         System.out.println("colormain" + SharedPreferencesUtils.getInt(getApplicationContext(), "color", 0));
         if (color == 1) {
@@ -68,6 +73,7 @@ public class MainActivity extends BaseActivity {
         mProgressbar = (Button) findViewById(R.id.mprogressbar);
         mRecyclerView = (Button) findViewById(R.id.mrecyclerView);
         mZyt = (Button) findViewById(R.id.mzyt);
+        mYaoYiYao = (Button) findViewById(R.id.yaoyiyao);
 
 
     }
@@ -98,6 +104,8 @@ public class MainActivity extends BaseActivity {
         mProgressbar.setOnClickListener(this);
         mRecyclerView.setOnClickListener(this);
         mZyt.setOnClickListener(this);
+        mYaoYiYao.setOnClickListener(this);
+        mPinePic.setOnClickListener(this);
 
     }
 
@@ -147,6 +155,12 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.mzyt:
                 startActivity(new Intent(this, ZytActivity.class));
+                break;
+            case R.id.yaoyiyao:
+                startActivity(new Intent(this, YaoYiYaoActivity.class));
+                break;
+            case R.id.pinepic:
+                startActivity(new Intent(this, PineViewActivity.class));
                 break;
         }
 

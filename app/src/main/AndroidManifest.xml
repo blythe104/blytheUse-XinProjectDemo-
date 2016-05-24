@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
 
     <application
         android:allowBackup="true"
@@ -54,6 +55,12 @@
         <activity android:name=".dslc.RecyclerViewActivity">
         </activity>
         <activity android:name=".dslc.ZytActivity">
+        </activity>
+        <activity android:name=".activity.FlexboxLayoutActivity">
+        </activity>
+        <activity android:name=".dslc.YaoYiYaoActivity">
+        </activity>
+        <activity android:name=".activity.PineViewActivity">
         </activity>
     </application>
 

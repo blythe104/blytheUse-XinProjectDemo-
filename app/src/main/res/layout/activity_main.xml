@@ -59,6 +59,7 @@
                 android:layout_height="45dp"
                 android:layout_marginTop="4dp"
                 android:text="改变色值"/>
+
             <Button
                 android:id="@+id/dslcwd"
                 android:layout_width="match_parent"
@@ -72,6 +73,7 @@
                 android:layout_height="45dp"
                 android:layout_marginTop="4dp"
                 android:text="大圣理财发现"/>
+
             <Button
                 android:id="@+id/dslcjx"
                 android:layout_width="match_parent"
@@ -80,29 +82,45 @@
                 android:text="大圣理财精选"/>
 
             <Button
-            android:id="@+id/radiochange"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginTop="4dp"
-            android:text="RadioButton换行效果"/>
+                android:id="@+id/radiochange"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="4dp"
+                android:text="RadioButton换行效果"/>
+
             <Button
                 android:id="@+id/mprogressbar"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_marginTop="4dp"
                 android:text="自定义进度条"/>
+
             <Button
                 android:id="@+id/mrecyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_marginTop="4dp"
                 android:text="RecyclerView的使用"/>
+
             <Button
                 android:id="@+id/mzyt"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_marginTop="4dp"
                 android:text="折线图"/>
+
+            <Button
+                android:id="@+id/yaoyiyao"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="4dp"
+                android:text="摇一摇"/>
+            <Button
+                android:id="@+id/pinepic"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="4dp"
+                android:text="饼状图"/>
         </LinearLayout>
     </ScrollView>
 
