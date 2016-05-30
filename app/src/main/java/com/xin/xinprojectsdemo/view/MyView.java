@@ -12,7 +12,7 @@ import android.widget.Scroller;
 import com.xin.xinprojectsdemo.R;
 
 public class MyView extends View {
-    public int XPoint = 40; // 原点的X坐标
+    public int XPoint = 20; // 原点的X坐标
     public int YPoint = 460; // 原点的Y坐标
     public int XScale = 55; // X的刻度长度
     public int YScale = 60; // Y的刻度长度
@@ -55,19 +55,19 @@ public class MyView extends View {
         paint1.setStyle(Paint.Style.STROKE);
         paint1.setAntiAlias(true);// 去锯齿
         paint1.setColor(Color.DKGRAY);
-        paint.setTextSize(12); // 设置轴文字大小
+        paint.setTextSize(40); // 设置轴文字大小
         // 设置Y轴(对于系统来讲屏幕的原点在左上角）
-        canvas.drawLine(XPoint, YPoint - YLength, XPoint, YPoint, paint); // 轴线
-        for (int i = 0; i * YScale < YLength; i++) {
-            canvas.drawLine(XPoint, YPoint - i * YScale, XPoint + 5, YPoint - i * YScale, paint); // 刻度
-            // XPoint+5画出了一条短的小横线
-            try {
-                canvas.drawText(YLabel[i], XPoint - 22, YPoint - i * YScale + 5, paint); // 文字
-            } catch (Exception e) {
-            }
-        }
-        canvas.drawLine(XPoint, YPoint - YLength, XPoint - 3, YPoint - YLength + 6, paint); // 箭头
-        canvas.drawLine(XPoint, YPoint - YLength, XPoint + 3, YPoint - YLength + 6, paint);
+//        canvas.drawLine(XPoint, YPoint - YLength, XPoint, YPoint, paint); // 轴线
+//        for (int i = 0; i * YScale < YLength; i++) {
+//            canvas.drawLine(XPoint, YPoint - i * YScale, XPoint + 5, YPoint - i * YScale, paint); // 刻度
+//            // XPoint+5画出了一条短的小横线
+//            try {
+//                canvas.drawText(YLabel[i], XPoint - 22, YPoint - i * YScale + 5, paint); // 文字
+//            } catch (Exception e) {
+//            }
+//        }
+//        canvas.drawLine(XPoint, YPoint - YLength, XPoint - 3, YPoint - YLength + 6, paint); // 箭头
+//        canvas.drawLine(XPoint, YPoint - YLength, XPoint + 3, YPoint - YLength + 6, paint);
         // 设置X轴
         canvas.drawLine(XPoint, YPoint, XPoint + XLength, YPoint, paint); // 轴线
         for (int i = 0; i * XScale < XLength; i++) {
@@ -82,9 +82,9 @@ public class MyView extends View {
             } catch (Exception e) {
             }
         }
-        canvas.drawLine(XPoint + XLength, YPoint, XPoint + XLength - 6, YPoint - 3, paint); // 箭头
-        canvas.drawLine(XPoint + XLength, YPoint, XPoint + XLength - 6, YPoint + 3, paint);
-        paint.setTextSize(16);
+//        canvas.drawLine(XPoint + XLength, YPoint, XPoint + XLength - 6, YPoint - 3, paint); // 箭头
+//        canvas.drawLine(XPoint + XLength, YPoint, XPoint + XLength - 6, YPoint + 3, paint);
+        paint.setTextSize(25);
         canvas.drawText(Title, 150, 50, paint);
     }
 
