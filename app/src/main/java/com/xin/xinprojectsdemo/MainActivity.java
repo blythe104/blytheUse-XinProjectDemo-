@@ -9,6 +9,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.xin.xinprojectsdemo.activity.PineViewActivity;
+import com.xin.xinprojectsdemo.activity.QQListDemoActivity;
+import com.xin.xinprojectsdemo.activity.RecyclerViewMenuActivity;
 import com.xin.xinprojectsdemo.androidh5.HtmlActivity;
 import com.xin.xinprojectsdemo.base.BaseActivity;
 import com.xin.xinprojectsdemo.chagebgcolor.ChangeBgColor;
@@ -24,6 +26,7 @@ import com.xin.xinprojectsdemo.dslc.ZytActivity;
 import com.xin.xinprojectsdemo.fontchange.ViewPagerUseActivity;
 import com.xin.xinprojectsdemo.marqueen.MarQueenActivity;
 import com.xin.xinprojectsdemo.transtoolbar.DemoActivity;
+import com.xin.xinprojectsdemo.utils.ActivityUtils;
 import com.xin.xinprojectsdemo.utils.SharedPreferencesUtils;
 
 public class MainActivity extends BaseActivity {
@@ -44,6 +47,8 @@ public class MainActivity extends BaseActivity {
     private Button mZyt;
     private Button mYaoYiYao;
     private Button mPinePic;
+    private Button mBtnQqList;
+    private Button mBtnRecyList;
 
 
     @Override
@@ -57,6 +62,8 @@ public class MainActivity extends BaseActivity {
         mTransToolbar = (Button) findViewById(R.id.transtoolbar);
         mChangeColor = (Button) findViewById(R.id.chageColor);
         mPinePic = (Button) findViewById(R.id.pinepic);
+        mBtnQqList = (Button) findViewById(R.id.btn_qqlist);
+        mBtnRecyList = (Button) findViewById(R.id.btn_recylist);
         int color = SharedPreferencesUtils.getInt(getApplicationContext(), "color", 0);
         System.out.println("colormain" + SharedPreferencesUtils.getInt(getApplicationContext(), "color", 0));
         if (color == 1) {
@@ -66,6 +73,7 @@ public class MainActivity extends BaseActivity {
         } else if (color == 3) {
             relativeLayout.setBackgroundColor(Color.GRAY);
         }
+
         mDslcWd = (Button) findViewById(R.id.dslcwd);
         mDslcJx = (Button) findViewById(R.id.dslcjx);
         mDslcFx = (Button) findViewById(R.id.dslcfx);
@@ -106,6 +114,8 @@ public class MainActivity extends BaseActivity {
         mZyt.setOnClickListener(this);
         mYaoYiYao.setOnClickListener(this);
         mPinePic.setOnClickListener(this);
+        mBtnQqList.setOnClickListener(this);
+        mBtnRecyList.setOnClickListener(this);
 
     }
 
@@ -161,6 +171,12 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.pinepic:
                 startActivity(new Intent(this, PineViewActivity.class));
+                break;
+            case R.id.btn_qqlist:
+                startActivity(new Intent(this, QQListDemoActivity.class));
+                break;
+            case R.id.btn_recylist:
+                ActivityUtils.startActivityLeftOutRightIn(this, RecyclerViewMenuActivity.class);
                 break;
         }
 

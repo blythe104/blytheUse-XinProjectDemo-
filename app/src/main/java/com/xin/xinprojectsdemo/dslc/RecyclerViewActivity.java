@@ -32,7 +32,6 @@ public class RecyclerViewActivity extends BaseActivity {
         myAdapter = new MyAdapter(dataset);
         mRecycle.setAdapter(myAdapter);
 
-
     }
 
     @Override

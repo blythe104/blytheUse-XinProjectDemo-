@@ -19,10 +19,17 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/shape_linechagnecolor"/>
+
             <Button
                 android:id="@+id/customa"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
+                android:background="@drawable/shape_linechagnecolor"
                 android:text="自定义属性"/>
 
             <Button
@@ -115,12 +122,27 @@
                 android:layout_height="45dp"
                 android:layout_marginTop="4dp"
                 android:text="摇一摇"/>
+
             <Button
                 android:id="@+id/pinepic"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_marginTop="4dp"
                 android:text="饼状图"/>
+
+            <Button
+                android:id="@+id/btn_qqlist"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="4dp"
+                android:text="qqListView"/>
+
+            <Button
+                android:id="@+id/btn_recylist"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="4dp"
+                android:text="RecyclerView多级菜单"/>
         </LinearLayout>
     </ScrollView>
 
