@@ -8,6 +8,8 @@ import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.xin.xinprojectsdemo.activity.DataIsMatchActivity;
+import com.xin.xinprojectsdemo.activity.PathUseActivity;
 import com.xin.xinprojectsdemo.activity.PineViewActivity;
 import com.xin.xinprojectsdemo.activity.QQListDemoActivity;
 import com.xin.xinprojectsdemo.activity.RecyclerViewMenuActivity;
@@ -49,6 +51,9 @@ public class MainActivity extends BaseActivity {
     private Button mPinePic;
     private Button mBtnQqList;
     private Button mBtnRecyList;
+    private Button mPathUse;
+    private Button mBtnJinZhan;
+    private Button mBtnRadio;
 
 
     @Override
@@ -84,6 +89,12 @@ public class MainActivity extends BaseActivity {
         mYaoYiYao = (Button) findViewById(R.id.yaoyiyao);
 
 
+        //第四行数据
+        mPathUse = (Button) findViewById(R.id.pathuse);
+        mBtnJinZhan = (Button) findViewById(R.id.jinzhan);
+        mBtnRadio = (Button) findViewById(R.id.btn_radio);
+
+
     }
 
     public void initTitleBar() {
@@ -117,6 +128,9 @@ public class MainActivity extends BaseActivity {
         mBtnQqList.setOnClickListener(this);
         mBtnRecyList.setOnClickListener(this);
 
+        mPathUse.setOnClickListener(this);
+        mBtnJinZhan.setOnClickListener(this);
+        mBtnRadio.setOnClickListener(this);
     }
 
     @Override
@@ -177,6 +191,15 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.btn_recylist:
                 ActivityUtils.startActivityLeftOutRightIn(this, RecyclerViewMenuActivity.class);
+                break;
+            case R.id.pathuse:
+                ActivityUtils.startActivityLeftOutRightIn(this, PathUseActivity.class);
+                break;
+            case R.id.jinzhan:
+                ActivityUtils.startActivityLeftOutRightIn(this, DataIsMatchActivity.class);
+                break;
+            case R.id.btn_radio:
+                ActivityUtils.startActivityLeftOutRightIn(this, RadioTest.class);
                 break;
         }
 
