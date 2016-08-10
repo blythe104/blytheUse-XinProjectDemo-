@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.xin.xinprojectsdemo"
-        minSdkVersion 14
+        minSdkVersion 21
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
@@ -31,5 +31,6 @@ dependencies {
     compile 'com.github.PhilJay:MPAndroidChart:v2.1.6'
     compile files('libs/mpandroidchartlibrary-2-2-4.jar')
     compile files('libs/nineoldandroids-2.4.0.jar')
+    compile 'com.jakewharton:butterknife:8.1.0'
 
 }

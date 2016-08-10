@@ -2,6 +2,8 @@ package com.xin.xinprojectsdemo;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.ActivityOptionsCompat;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
@@ -17,9 +19,6 @@ import com.xin.xinprojectsdemo.androidh5.HtmlActivity;
 import com.xin.xinprojectsdemo.base.BaseActivity;
 import com.xin.xinprojectsdemo.chagebgcolor.ChangeBgColor;
 import com.xin.xinprojectsdemo.customattr.TypeDemo;
-import com.xin.xinprojectsdemo.dslc.FXActivity;
-import com.xin.xinprojectsdemo.dslc.JXAtivity;
-import com.xin.xinprojectsdemo.dslc.MineActivity;
 import com.xin.xinprojectsdemo.dslc.ProgressBarActivity;
 import com.xin.xinprojectsdemo.dslc.RadioButtonMoreStyle;
 import com.xin.xinprojectsdemo.dslc.RecyclerViewActivity;
@@ -31,18 +30,16 @@ import com.xin.xinprojectsdemo.transtoolbar.DemoActivity;
 import com.xin.xinprojectsdemo.utils.ActivityUtils;
 import com.xin.xinprojectsdemo.utils.SharedPreferencesUtils;
 
+import butterknife.ButterKnife;
+
 public class MainActivity extends BaseActivity {
 
     private Button customa;
     private Button fontchange;
-    private Button marqueen;
     private Button mAndroidH5;
     private Button mTransToolbar;
     private Button mChangeColor;
     private RelativeLayout relativeLayout;
-    private Button mDslcWd;
-    private Button mDslcFx;
-    private Button mDslcJx;
     private Button mRadioChange;
     private Button mProgressbar;
     private Button mRecyclerView;
@@ -55,12 +52,15 @@ public class MainActivity extends BaseActivity {
     private Button mBtnJinZhan;
     private Button mBtnRadio;
 
+    //    @BindView(R.id.marqueen)
+    private Button marqueen;
 
     @Override
     public void initView() {
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
         initTitleBar();
-        marqueen = (Button) findViewById(R.id.marqueen);
+
         fontchange = (Button) findViewById(R.id.fontchange);
         customa = (Button) findViewById(R.id.customa);
         mAndroidH5 = (Button) findViewById(R.id.androidh5);
@@ -79,14 +79,12 @@ public class MainActivity extends BaseActivity {
             relativeLayout.setBackgroundColor(Color.GRAY);
         }
 
-        mDslcWd = (Button) findViewById(R.id.dslcwd);
-        mDslcJx = (Button) findViewById(R.id.dslcjx);
-        mDslcFx = (Button) findViewById(R.id.dslcfx);
         mRadioChange = (Button) findViewById(R.id.radiochange);
         mProgressbar = (Button) findViewById(R.id.mprogressbar);
         mRecyclerView = (Button) findViewById(R.id.mrecyclerView);
         mZyt = (Button) findViewById(R.id.mzyt);
         mYaoYiYao = (Button) findViewById(R.id.yaoyiyao);
+        marqueen = (Button) findViewById(R.id.marqueen);
 
 
         //第四行数据
@@ -110,15 +108,11 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void initListener() {
-        marqueen.setOnClickListener(this);
         fontchange.setOnClickListener(this);
         customa.setOnClickListener(this);
         mAndroidH5.setOnClickListener(this);
         mTransToolbar.setOnClickListener(this);
         mChangeColor.setOnClickListener(this);
-        mDslcWd.setOnClickListener(this);
-        mDslcFx.setOnClickListener(this);
-        mDslcJx.setOnClickListener(this);
         mRadioChange.setOnClickListener(this);
         mProgressbar.setOnClickListener(this);
         mRecyclerView.setOnClickListener(this);
@@ -131,6 +125,7 @@ public class MainActivity extends BaseActivity {
         mPathUse.setOnClickListener(this);
         mBtnJinZhan.setOnClickListener(this);
         mBtnRadio.setOnClickListener(this);
+        marqueen.setOnClickListener(this);
     }
 
     @Override
@@ -142,7 +137,12 @@ public class MainActivity extends BaseActivity {
     public void processClick(View v) {
         switch (v.getId()) {
             case R.id.marqueen:
-                startActivity(new Intent(this, MarQueenActivity.class));
+                /**
+                 * 第一个参数当前对象，第二个对象进入动画，第三个参数退出动画
+                 */
+                ActivityOptionsCompat compat = ActivityOptionsCompat.makeCustomAnimation(this, android.R.anim
+                        .fade_in, android.R.anim.fade_out);
+                ActivityCompat.startActivity(this, new Intent(this, MarQueenActivity.class), compat.toBundle());
                 break;
             case R.id.customa:
                 startActivity(new Intent(this, TypeDemo.class));
@@ -157,16 +157,10 @@ public class MainActivity extends BaseActivity {
                 startActivity(new Intent(this, DemoActivity.class));
                 break;
             case R.id.chageColor:
-                startActivity(new Intent(this, ChangeBgColor.class));
-                break;
-            case R.id.dslcwd:
-                startActivity(new Intent(this, MineActivity.class));
-                break;
-            case R.id.dslcfx:
-                startActivity(new Intent(this, FXActivity.class));
-                break;
-            case R.id.dslcjx:
-                startActivity(new Intent(this, JXAtivity.class));
+                ActivityOptionsCompat compat1 = ActivityOptionsCompat.makeScaleUpAnimation(mChangeColor, mChangeColor
+                        .getWidth() / 2, mChangeColor.getHeight() / 2, 0, 0);
+                ActivityCompat.startActivity(this,new Intent(this,
+                    ChangeBgColor.class),compat1.toBundle());
                 break;
             case R.id.radiochange:
                 startActivity(new Intent(this, RadioButtonMoreStyle.class));
@@ -190,6 +184,7 @@ public class MainActivity extends BaseActivity {
                 startActivity(new Intent(this, QQListDemoActivity.class));
                 break;
             case R.id.btn_recylist:
+
                 ActivityUtils.startActivityLeftOutRightIn(this, RecyclerViewMenuActivity.class);
                 break;
             case R.id.pathuse:
