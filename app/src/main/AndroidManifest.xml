@@ -72,6 +72,10 @@
         </activity>
         <activity android:name=".RadioTest">
         </activity>
+        <activity android:name=".customermenu.CustomerContentActivity">
+        </activity>
+        <activity android:name=".customermenu.MenuMixContorl">
+        </activity>
     </application>
 
 </manifest>
