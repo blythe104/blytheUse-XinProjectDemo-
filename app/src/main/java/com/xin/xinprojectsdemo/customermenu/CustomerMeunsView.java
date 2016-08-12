@@ -33,9 +33,12 @@ public class CustomerMeunsView extends LinearLayout {
     }
 
     public void setDatas(List<ItemData> datas) {
+        //第一次创建
         if (getChildCount() == 0) {
             for (ItemData item : datas) {
+                //根据传输的内容加载不同的布局
                 if (item.content == null) {
+                    //定义一个中间的空行
                     LinearLayout ll = new LinearLayout(getContext());
                     ll.setMinimumHeight(30);
                     addView(ll);
@@ -44,7 +47,7 @@ public class CustomerMeunsView extends LinearLayout {
                 }
             }
         } else {
-
+            //第二次创建
             for (int index = 0; index < getChildCount(); index++) {
                 LinearLayout childView = (LinearLayout) getChildAt(index);
                 if (childView instanceof MenuMixContorl) {

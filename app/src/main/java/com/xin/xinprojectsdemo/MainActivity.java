@@ -56,6 +56,7 @@ public class MainActivity extends BaseActivity {
     //    @BindView(R.id.marqueen)
     private Button marqueen;
     private Button mBtnCustomer;
+    private Button mCustomerDemo;
 
     @Override
     public void initView() {
@@ -93,6 +94,7 @@ public class MainActivity extends BaseActivity {
         mBtnJinZhan = (Button) findViewById(R.id.jinzhan);
         mBtnRadio = (Button) findViewById(R.id.btn_radio);
         mBtnCustomer = (Button) findViewById(R.id.customercontent);
+        mCustomerDemo = (Button) findViewById(R.id.customer_demo);
 
 
     }
@@ -129,6 +131,7 @@ public class MainActivity extends BaseActivity {
         mBtnRadio.setOnClickListener(this);
         marqueen.setOnClickListener(this);
         mBtnCustomer.setOnClickListener(this);
+        mCustomerDemo.setOnClickListener(this);
     }
 
     @Override
@@ -139,6 +142,9 @@ public class MainActivity extends BaseActivity {
     @Override
     public void processClick(View v) {
         switch (v.getId()) {
+            case  R.id.customer_demo:
+                startActivity(new Intent(this,CustomerActivity.class));
+                break;
             //自定义组合控件的使用
             case R.id.customercontent:
                 ActivityOptionsCompat compatcustomer = ActivityOptionsCompat.makeScaleUpAnimation(mChangeColor, mChangeColor
@@ -194,7 +200,6 @@ public class MainActivity extends BaseActivity {
                 startActivity(new Intent(this, QQListDemoActivity.class));
                 break;
             case R.id.btn_recylist:
-
                 ActivityUtils.startActivityLeftOutRightIn(this, RecyclerViewMenuActivity.class);
                 break;
             case R.id.pathuse:

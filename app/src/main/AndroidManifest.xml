@@ -76,6 +76,10 @@
         </activity>
         <activity android:name=".customermenu.MenuMixContorl">
         </activity>
+        <activity android:name=".citydemo.CityLikeTaobaoDemo">
+        </activity>
+        <activity android:name=".CustomerActivity">
+        </activity>
     </application>
 
 </manifest>
