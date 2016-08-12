@@ -80,6 +80,8 @@
         </activity>
         <activity android:name=".CustomerActivity">
         </activity>
+        <activity android:name=".webviewcache.WebViewActivity">
+        </activity>
     </application>
 
 </manifest>

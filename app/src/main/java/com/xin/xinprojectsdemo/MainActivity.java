@@ -30,6 +30,7 @@ import com.xin.xinprojectsdemo.marqueen.MarQueenActivity;
 import com.xin.xinprojectsdemo.transtoolbar.DemoActivity;
 import com.xin.xinprojectsdemo.utils.ActivityUtils;
 import com.xin.xinprojectsdemo.utils.SharedPreferencesUtils;
+import com.xin.xinprojectsdemo.webviewcache.WebViewActivity;
 
 import butterknife.ButterKnife;
 
@@ -57,6 +58,7 @@ public class MainActivity extends BaseActivity {
     private Button marqueen;
     private Button mBtnCustomer;
     private Button mCustomerDemo;
+    private Button webview;
 
     @Override
     public void initView() {
@@ -95,6 +97,7 @@ public class MainActivity extends BaseActivity {
         mBtnRadio = (Button) findViewById(R.id.btn_radio);
         mBtnCustomer = (Button) findViewById(R.id.customercontent);
         mCustomerDemo = (Button) findViewById(R.id.customer_demo);
+        webview = (Button) findViewById(R.id.webview);
 
 
     }
@@ -132,6 +135,7 @@ public class MainActivity extends BaseActivity {
         marqueen.setOnClickListener(this);
         mBtnCustomer.setOnClickListener(this);
         mCustomerDemo.setOnClickListener(this);
+        webview.setOnClickListener(this);
     }
 
     @Override
@@ -142,6 +146,9 @@ public class MainActivity extends BaseActivity {
     @Override
     public void processClick(View v) {
         switch (v.getId()) {
+            case R.id.webview:
+                startActivity(new Intent(this,WebViewActivity.class));
+                break;
             case  R.id.customer_demo:
                 startActivity(new Intent(this,CustomerActivity.class));
                 break;
