@@ -44,10 +44,6 @@
         </activity>
         <activity android:name=".dslc.DSLCMainActivity">
         </activity>
-        <activity android:name=".dslc.FXActivity">
-        </activity>
-        <activity android:name=".dslc.JXAtivity">
-        </activity>
         <activity android:name=".dslc.RadioButtonMoreStyle">
         </activity>
         <activity android:name=".dslc.ProgressBarActivity">
@@ -73,8 +69,6 @@
         <activity android:name=".RadioTest">
         </activity>
         <activity android:name=".customermenu.CustomerContentActivity">
-        </activity>
-        <activity android:name=".customermenu.MenuMixContorl">
         </activity>
         <activity android:name=".citydemo.CityLikeTaobaoDemo">
         </activity>

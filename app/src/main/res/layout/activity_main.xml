@@ -125,12 +125,7 @@
                 android:layout_marginTop="4dp"
                 android:text="自定义集合"/>
 
-            <Button
-                android:id="@+id/customercontent"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:layout_marginTop="4dp"
-                android:text="自定义组合控件"/>
+
 
 
             <Button

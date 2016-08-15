@@ -19,7 +19,6 @@ import com.xin.xinprojectsdemo.androidh5.HtmlActivity;
 import com.xin.xinprojectsdemo.base.BaseActivity;
 import com.xin.xinprojectsdemo.chagebgcolor.ChangeBgColor;
 import com.xin.xinprojectsdemo.customattr.TypeDemo;
-import com.xin.xinprojectsdemo.customermenu.CustomerContentActivity;
 import com.xin.xinprojectsdemo.dslc.ProgressBarActivity;
 import com.xin.xinprojectsdemo.dslc.RadioButtonMoreStyle;
 import com.xin.xinprojectsdemo.dslc.RecyclerViewActivity;
@@ -56,7 +55,6 @@ public class MainActivity extends BaseActivity {
 
     //    @BindView(R.id.marqueen)
     private Button marqueen;
-    private Button mBtnCustomer;
     private Button mCustomerDemo;
     private Button webview;
 
@@ -95,7 +93,7 @@ public class MainActivity extends BaseActivity {
         mPathUse = (Button) findViewById(R.id.pathuse);
         mBtnJinZhan = (Button) findViewById(R.id.jinzhan);
         mBtnRadio = (Button) findViewById(R.id.btn_radio);
-        mBtnCustomer = (Button) findViewById(R.id.customercontent);
+
         mCustomerDemo = (Button) findViewById(R.id.customer_demo);
         webview = (Button) findViewById(R.id.webview);
 
@@ -133,7 +131,6 @@ public class MainActivity extends BaseActivity {
         mBtnJinZhan.setOnClickListener(this);
         mBtnRadio.setOnClickListener(this);
         marqueen.setOnClickListener(this);
-        mBtnCustomer.setOnClickListener(this);
         mCustomerDemo.setOnClickListener(this);
         webview.setOnClickListener(this);
     }
@@ -152,13 +149,7 @@ public class MainActivity extends BaseActivity {
             case  R.id.customer_demo:
                 startActivity(new Intent(this,CustomerActivity.class));
                 break;
-            //自定义组合控件的使用
-            case R.id.customercontent:
-                ActivityOptionsCompat compatcustomer = ActivityOptionsCompat.makeScaleUpAnimation(mChangeColor, mChangeColor
-                        .getWidth() / 2, mChangeColor.getHeight() / 2, 0, 0);
-                ActivityCompat.startActivity(this,new Intent(this,
-                        CustomerContentActivity.class),compatcustomer.toBundle());
-                break;
+
             case R.id.marqueen:
                 /**
                  * 第一个参数当前对象，第二个对象进入动画，第三个参数退出动画
