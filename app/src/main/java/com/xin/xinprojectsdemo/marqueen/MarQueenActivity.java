@@ -3,7 +3,6 @@ package com.xin.xinprojectsdemo.marqueen;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -81,6 +80,5 @@ public class MarQueenActivity extends AppCompatActivity implements View.OnClickL
     public void onBackPressed() {
         super.onBackPressed();
         //退出动画
-        ActivityCompat.finishAfterTransition(this);
     }
 }
