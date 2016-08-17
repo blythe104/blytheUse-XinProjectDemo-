@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".pullrefresh.UltraUseActivity">
+
+    <in.srain.cube.views.ptr.PtrFrameLayout
+        android:id="@+id/pfl_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:ptr_duration_to_close="300"
+        app:ptr_duration_to_close_header="2000"
+        app:ptr_keep_header_when_refresh="true"
+        app:ptr_pull_to_fresh="false">
+
+        <TextView
+            android:id="@+id/tv_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="hello world test refresh "
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"/>
+
+    </in.srain.cube.views.ptr.PtrFrameLayout>
+
+</LinearLayout>

@@ -19,4 +19,11 @@
         android:layout_height="45dp"
         android:layout_marginTop="4dp"
         android:text="自定义组合控件"/>
+
+    <Button
+        android:id="@+id/refreshpull"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:text="UItra的使用"/>
 </LinearLayout>

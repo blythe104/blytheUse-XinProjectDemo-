@@ -16,6 +16,15 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
+
+//        //1、添加依赖
+        mavenCentral();
+        maven {
+            url 'https://oss.sonatype.org/content/repositories/releases'
+        }
+        maven {
+            url 'https://oss.sonatype.org/content/repositories/snapshots'
+        }
     }
 }
 
