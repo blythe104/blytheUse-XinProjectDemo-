@@ -26,4 +26,11 @@
         android:layout_height="45dp"
         android:layout_marginTop="4dp"
         android:text="UItra的使用"/>
+
+    <Button
+        android:id="@+id/keyborad"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:text="模拟键盘事件"/>
 </LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xin.xinprojectsdemo.keyborad.EditKeyBoardActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_commit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:text="submit"/>
+
+            <EditText
+                android:id="@+id/et_one"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:hint="input text one"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                />
+
+            <EditText
+                android:id="@+id/et_two"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="100dp"
+                android:hint="input text two"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                />
+
+            <EditText
+                android:id="@+id/et_three"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="100dp"
+                android:hint="input text three"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                />
+
+            <EditText
+                android:id="@+id/et_four"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="100dp"
+                android:hint="input text four"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                />
+
+            <EditText
+                android:id="@+id/et_five"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="100dp"
+                android:hint="input text five"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
