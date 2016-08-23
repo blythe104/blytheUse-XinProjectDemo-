@@ -117,11 +117,13 @@
 
         <activity android:name=".pullrefresh.UltraUseActivity">
         </activity>
-        <activity android:name=".keyborad.EditKeyBoardActivity">
+        <activity android:name=".keyborad.EditKeyBoardActivity"
+                  android:windowSoftInputMode="stateVisible|adjustResize">
         </activity>
         <activity
             android:name=".keyborad.GetTextActivity"
             android:windowSoftInputMode="stateVisible|adjustPan">
+
         </activity>
     </application>
 

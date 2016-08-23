@@ -3,7 +3,6 @@ package com.xin.xinprojectsdemo.keyborad;
 import android.content.Intent;
 import android.view.KeyEvent;
 import android.view.View;
-import android.view.WindowManager;
 import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
@@ -26,7 +25,7 @@ public class EditKeyBoardActivity extends BaseActivity {
     public void initView() {
         setContentView(R.layout.activity_edit_key_board);
         //设置键盘模式
-        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
+//        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
 
         etfive = (EditText) findViewById(R.id.et_five);
         etfour = (EditText) findViewById(R.id.et_four);

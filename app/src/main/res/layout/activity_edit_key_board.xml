@@ -45,22 +45,82 @@
                 android:maxLines="1"
                 />
 
-            <EditText
-                android:id="@+id/et_three"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
-                android:layout_marginTop="100dp"
-                android:hint="input text three"
-                android:imeOptions="actionNext"
-                android:inputType="text"
-                android:maxLines="1"
-                />
+                android:background="@drawable/shape_edit_bg">
+
+                <EditText
+                    android:id="@+id/et_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="50dp"
+                    android:hint="input text three"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="13sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:padding="6dp"
+                android:background="@drawable/shape_edit_bg"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_margin="7dp"
+                        android:src="@mipmap/ic_launcher"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/colorWhite"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8">
+
+                    <EditText
+                        android:id="@+id/et_checkcode"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="7dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="left|center_vertical"
+                        android:hint="短信验证码"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:singleLine="true"
+                        android:textColor="#9db2c7"
+                        android:textColorHint="#9db2c7"
+                        android:textCursorDrawable="@null"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
 
             <EditText
                 android:id="@+id/et_four"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="50dp"
                 android:hint="input text four"
                 android:imeOptions="actionNext"
                 android:inputType="text"
