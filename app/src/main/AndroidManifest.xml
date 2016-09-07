@@ -117,13 +117,15 @@
 
         <activity android:name=".pullrefresh.UltraUseActivity">
         </activity>
-        <activity android:name=".keyborad.EditKeyBoardActivity"
-                  android:windowSoftInputMode="stateVisible|adjustResize">
+        <activity
+            android:name=".keyborad.EditKeyBoardActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize">
         </activity>
         <activity
             android:name=".keyborad.GetTextActivity"
             android:windowSoftInputMode="stateVisible|adjustPan">
-
+        </activity>
+        <activity android:name=".rxjava.RxJavaDemoActivity">
         </activity>
     </application>
 

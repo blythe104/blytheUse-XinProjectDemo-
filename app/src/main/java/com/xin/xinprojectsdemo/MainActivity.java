@@ -35,6 +35,7 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends BaseActivity {
 
+    private static final String TAG ="MainActivity" ;
     private Button customa;
     private Button fontchange;
     private Button mAndroidH5;

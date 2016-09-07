@@ -38,6 +38,10 @@ dependencies {
     compile files('libs/umeng_social_sdk.jar')
     //pull refresh
     compile 'in.srain.cube:ultra-ptr:1.0.11'
-//    compile 'in.srain.cube:clog:1.0.2'
-//    compile 'in.srain.cube:cube-sdk:1.0.44.39-SNAPSHOT@aar'
+    compile 'io.reactivex:rxjava:1.0.9'
+    compile 'io.reactivex:rxandroid:0.24.0'
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+
+    //    compile 'in.srain.cube:clog:1.0.2'
+    //    compile 'in.srain.cube:cube-sdk:1.0.44.39-SNAPSHOT@aar'
 }
