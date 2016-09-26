@@ -19,6 +19,7 @@ import com.xin.xinprojectsdemo.androidh5.HtmlActivity;
 import com.xin.xinprojectsdemo.base.BaseActivity;
 import com.xin.xinprojectsdemo.chagebgcolor.ChangeBgColor;
 import com.xin.xinprojectsdemo.customattr.TypeDemo;
+import com.xin.xinprojectsdemo.dslc.MineActivity;
 import com.xin.xinprojectsdemo.dslc.ProgressBarActivity;
 import com.xin.xinprojectsdemo.dslc.RadioButtonMoreStyle;
 import com.xin.xinprojectsdemo.dslc.RecyclerViewActivity;
@@ -35,7 +36,8 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends BaseActivity {
 
-    private static final String TAG ="MainActivity" ;
+    private static final String TAG = "MainActivity";
+    Button mBtnPer;
     private Button customa;
     private Button fontchange;
     private Button mAndroidH5;
@@ -53,7 +55,6 @@ public class MainActivity extends BaseActivity {
     private Button mPathUse;
     private Button mBtnJinZhan;
     private Button mBtnRadio;
-
     //    @BindView(R.id.marqueen)
     private Button marqueen;
     private Button mCustomerDemo;
@@ -65,6 +66,7 @@ public class MainActivity extends BaseActivity {
         ButterKnife.bind(this);
         initTitleBar();
         fontchange = (Button) findViewById(R.id.fontchange);
+        mBtnPer = (Button) findViewById(R.id.per_btn);
         customa = (Button) findViewById(R.id.customa);
         mAndroidH5 = (Button) findViewById(R.id.androidh5);
         mTransToolbar = (Button) findViewById(R.id.transtoolbar);
@@ -101,6 +103,7 @@ public class MainActivity extends BaseActivity {
 
     }
 
+
     public void initTitleBar() {
         relativeLayout = (RelativeLayout) findViewById(R.id.rl_titlebar);
         TextView tv_title = (TextView) findViewById(R.id.tv_title);
@@ -134,6 +137,7 @@ public class MainActivity extends BaseActivity {
         marqueen.setOnClickListener(this);
         mCustomerDemo.setOnClickListener(this);
         webview.setOnClickListener(this);
+        mBtnPer.setOnClickListener(this);
     }
 
     @Override
@@ -144,11 +148,14 @@ public class MainActivity extends BaseActivity {
     @Override
     public void processClick(View v) {
         switch (v.getId()) {
-            case R.id.webview:
-                startActivity(new Intent(this,WebViewActivity.class));
+            case R.id.per_btn:
+                startActivity(new Intent(this, MineActivity.class));
                 break;
-            case  R.id.customer_demo:
-                startActivity(new Intent(this,CustomerActivity.class));
+            case R.id.webview:
+                startActivity(new Intent(this, WebViewActivity.class));
+                break;
+            case R.id.customer_demo:
+                startActivity(new Intent(this, CustomerActivity.class));
                 break;
 
             case R.id.marqueen:
@@ -174,8 +181,7 @@ public class MainActivity extends BaseActivity {
             case R.id.chageColor:
                 ActivityOptionsCompat compat1 = ActivityOptionsCompat.makeScaleUpAnimation(mChangeColor, mChangeColor
                         .getWidth() / 2, mChangeColor.getHeight() / 2, 0, 0);
-                ActivityCompat.startActivity(this,new Intent(this,
-                    ChangeBgColor.class),compat1.toBundle());
+                ActivityCompat.startActivity(this, new Intent(this, ChangeBgColor.class), compat1.toBundle());
                 break;
             case R.id.radiochange:
                 startActivity(new Intent(this, RadioButtonMoreStyle.class));

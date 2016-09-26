@@ -127,6 +127,10 @@
         </activity>
         <activity android:name=".rxjava.RxJavaDemoActivity">
         </activity>
+        <activity android:name=".job.CustomLearnActivity">
+        </activity>
+        <activity android:name=".job.TouchDemoActivity">
+        </activity>
     </application>
 
 </manifest>

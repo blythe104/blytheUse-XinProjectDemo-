@@ -9,10 +9,11 @@
 
 
     <Button
+        android:id="@+id/citylike"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:text="城市查看"
-        android:id="@+id/citylike"/>
+        android:text="城市查看"/>
+
     <Button
         android:id="@+id/customercontent"
         android:layout_width="match_parent"
@@ -33,4 +34,30 @@
         android:layout_height="45dp"
         android:layout_marginTop="4dp"
         android:text="模拟键盘事件"/>
+
+    <Button
+        android:id="@+id/custom_learn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:text="自定义事件学习"/>
+
+    <Button
+        android:id="@+id/custom_touch"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:text="事件分发机制"/>
+
+    <Button
+        android:id="@+id/custom_et_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:text="输入框与按钮的组合"/>
+
+    <com.xin.xinprojectsdemo.job.EdBtnView
+        android:id="@+id/et_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></com.xin.xinprojectsdemo.job.EdBtnView>
 </LinearLayout>

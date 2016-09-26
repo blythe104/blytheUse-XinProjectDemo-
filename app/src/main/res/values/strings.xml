@@ -3,4 +3,7 @@
     <string name="tag1">english</string>
     <string name="tag2">chinese</string>
     <string name="tag3">textdemo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

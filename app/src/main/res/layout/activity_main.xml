@@ -113,6 +113,12 @@
 
             </GridLayout>
             <Button
+                android:id="@+id/per_btn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="4dp"
+                android:text="头像权限设置"/>
+            <Button
                 android:id="@+id/webview"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
@@ -124,9 +130,6 @@
                 android:layout_height="45dp"
                 android:layout_marginTop="4dp"
                 android:text="自定义集合"/>
-
-
-
 
             <Button
                 android:id="@+id/radiochange"

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/XinProjectsDemo.iml" filepath="$PROJECT_DIR$/XinProjectsDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/blytheUse-XinProjectDemo-.iml" filepath="$PROJECT_DIR$/blytheUse-XinProjectDemo-.iml" />
     </modules>
   </component>
 </project>
